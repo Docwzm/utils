@@ -1,0 +1,20 @@
+*.log*
+.cache
+.DS_Store
+.idea
+.vscode
+.lib
+
+# npm
+node_modules
+package-lock.json
+
+# dist file
+es
+lib
+dist
+demo/dist
+docs/dist
+changelog.generated.md
+test/coverage
+vetur

@@ -1,0 +1,46 @@
+{
+  "name": "@ls/utils",
+  "version": "0.3.22",
+  "description": "乐智健康前端工具库",
+  "author": "pengfei.yu",
+  "keywords": [
+    "JSBridge",
+    "Log",
+    "VConsole",
+    "Commmon"
+  ],
+  "main": "./lib/index.js",
+  "types": "./types/index.d.ts",
+  "scripts": {
+    "build:lib": "node ./build/build-lib.js",
+    "build:docs": "",
+    "unpub": "npm unpublish --registry=http://npm.lexin.com --force",
+    "pub": "npm run build:lib && npm publish --registry=http://npm.lexin.com"
+  },
+  "files": [
+    "lib",
+    "src",
+    "types"
+  ],
+  "dependencies": {
+    "@sentry/browser": "^5.10.2",
+    "@sentry/integrations": "^5.10.2",
+    "intersection-observer": "^0.7.0",
+    "mobile-detect": "^1.4.4"
+  },
+  "sideEffects": false,
+  "peerDependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-object-assign": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "@babel/runtime": "^7.6.3",
+    "fs-extra": "^8.1.0",
+    "prettier": "^1.18.2"
+  }
+}
